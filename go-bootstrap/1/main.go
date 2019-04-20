@@ -21,6 +21,6 @@ func AboutHandler(w http.ResponseWriter, r *http.Request) {
 // Main function
 func main() {
 	http.HandleFunc("/", IndexHandler)
-  http.HandleFunc("/about/", AboutHandler)
+	http.HandleFunc("/about/", AboutHandler)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
