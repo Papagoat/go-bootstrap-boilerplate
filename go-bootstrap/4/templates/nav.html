@@ -1,0 +1,6 @@
+{{ define "nav"}}
+<nav class='nav nav-pills justify-content-center p-3'>
+  <a class='nav-link {{if (eq .Title "Home page")}}active{{end}}' href='/'>Home</a>
+  <a class='nav-link {{if (eq .Title "About page")}}active{{end}}' href='/about/'>About</a>
+</nav>
+{{ end }}
